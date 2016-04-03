@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="mayaconsumer">
+    <head>
+        <title>Maya Consumer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="static/bower_components/angular/angular.min.js"></script>
+        <script src="static/bower_components/sockjs/sockjs.min.js"></script>
+        <script src="static/bower_components/stomp-websocket/lib/stomp.min.js"></script>
+        <script src="static/bower_components/lodash/dist/lodash.min.js"></script>
+        <script src="static/app.js"></script>
+    </head>
+    <body ng-controller="ConsumerController">
+    	<div ng-if="!active">
+    		Enter producer Id: <input ng-model="$parent.producerId" /> and <button ng-disabled="!isInt(producerId)" ng-click="start()">go</button>
+    	</div>
+    	<div ng-if="active">
+    		Message flow from producer #{{producerId}} <button ng-click="stop()">stop</button>
+    	</div>
+        <div ng-repeat="message in messages"><b>Producer #{{message.producerId}}:</b> {{message.payload}}</div>
+    </body>    
+</html>
