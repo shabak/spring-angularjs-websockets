@@ -1,6 +1,6 @@
 (function (angular, SockJS, Stomp, _) {
         
-    angular.module("mayaconsumer", [])
+    angular.module("consumer", [])
         .controller('ConsumerController', function ($scope, MessageService) {
             
             $scope.messages = [];

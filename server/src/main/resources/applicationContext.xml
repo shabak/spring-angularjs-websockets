@@ -12,7 +12,7 @@
  	http://www.springframework.org/schema/websocket
     http://www.springframework.org/schema/websocket/spring-websocket.xsd">
  
-    <context:component-scan base-package="com.mayasoft.a.server.controller" />
+    <context:component-scan base-package="ru.shabak.springangularwebsockets.server" />
  
     <mvc:annotation-driven />
     
