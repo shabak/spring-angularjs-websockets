@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mayasoft.a.server.dto;
+package ru.shabak.springangularwebsockets.server.dto;
 
 public class Message {
 
