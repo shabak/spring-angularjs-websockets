@@ -34,7 +34,7 @@
             };
 
             service.RECONNECT_TIMEOUT = 30000;
-            service.SOCKET_URL = "/maya/endpoint";
+            service.SOCKET_URL = "/endpoint";
             service.QUEUE = "/queue/message/";
             service.PRODUCER_ID = null;
 
